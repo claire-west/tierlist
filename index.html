@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tierlists | Claire West</title>
+    <link id="favicon" rel="icon" href="http://claire-west.ca/favicon.ico" />
+    <link href="http://lib.claire-west.ca/vend/css/foundation.min.css" rel="stylesheet" />
+    <link href="http://lib.claire-west.ca/vend/css/foundation-icons.css" rel="stylesheet" />
+    <link href="http://lib.claire-west.ca/vend/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="http://apps.claire-west.ca/hub/css/style.css" rel="stylesheet"></link>
+</head>
+<body>
+<style>
+    .top-bar.sectionNav {
+        padding-top: 0;
+    }
+    .top-bar:not(.sectionNav) {
+        padding-top: 0.25rem;
+        padding-bottom: 0;
+    }
+
+    /*.top-bar {
+        background-color: #222;
+        color: #efefef;
+    }
+    .top-bar:not(.sectionNav) h5 span {
+        color: #efefef;
+    }
+    .is-dropdown-submenu.menu, .is-dropdown-submenu-parent {
+        background-color: #222;
+        border-color: #333;
+    }
+    .dropdown.menu {
+        background-color: #222;
+    }
+    #app-swn .top-bar-content .menu .input-group a:not(:last-child) {
+        border-color: #222;
+    }*/
+</style>
+<nav class="top-bar">
+    <div class="row">
+        <div class="column">
+            <h5 class="margin-bottom-0">
+                <a href="#tierlist">
+                    <i class="fa fa-home"></i>
+                    <span>Tierlists</span>
+                </a>
+                <!-- <a class="float-right" data-open="infoDialog"><i class="fa fa-info-circle"></i></a> -->
+            </h5>
+        </div>
+    </div>
+</nav>
+<div id="app-tierlist" data-app="Tier List" class="app defaultApp" hidden></div>
+<script src="http://lib.claire-west.ca/vend/js/jquery.min.js"></script>
+<script src="http://lib.claire-west.ca/vend/js/foundation.min.js"></script>
+<script
+    src="http://lib.claire-west.ca/core/js/dynCore.js"
+    data-ns='{
+        "hub": "http://apps.claire-west.ca/hub"
+    }'></script>
+<script>
+    (function(dynCore) {
+        dynCore.ready(function(modules) {
+            dynCore.require('hub.appHub');
+        });
+    })(window.dynCore);
+</script>
+</body>
+</html>
