@@ -51,13 +51,14 @@
         </div>
     </div>
 </nav>
-<div id="app-tierlist" data-app="Tier List" class="app defaultApp" hidden></div>
+<div id="app-app" data-namespace="tierlist" data-app="Tier List" class="app defaultApp" hidden></div>
 <script src="http://lib.claire-west.ca/vend/js/jquery.min.js"></script>
 <script src="http://lib.claire-west.ca/vend/js/foundation.min.js"></script>
 <script
     src="http://lib.claire-west.ca/core/js/dynCore.js"
     data-ns='{
-        "hub": "http://apps.claire-west.ca/hub"
+        "hub": "http://apps.claire-west.ca/hub",
+        "tierlist": "/"
     }'></script>
 <script>
     (function(dynCore) {
