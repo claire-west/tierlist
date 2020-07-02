@@ -17,36 +17,18 @@
     }
     .top-bar:not(.sectionNav) {
         padding-top: 0.25rem;
-        padding-bottom: 0;
+        padding-bottom: 0.125rem;
+        margin-bottom: 0.875rem;
     }
-
-    /*.top-bar {
-        background-color: #222;
-        color: #efefef;
-    }
-    .top-bar:not(.sectionNav) h5 span {
-        color: #efefef;
-    }
-    .is-dropdown-submenu.menu, .is-dropdown-submenu-parent {
-        background-color: #222;
-        border-color: #333;
-    }
-    .dropdown.menu {
-        background-color: #222;
-    }
-    #app-swn .top-bar-content .menu .input-group a:not(:last-child) {
-        border-color: #222;
-    }*/
 </style>
 <nav class="top-bar">
     <div class="row">
         <div class="column">
             <h5 class="margin-bottom-0">
-                <a href="#tierlist">
+                <a href="#app">
                     <i class="fa fa-home"></i>
                     <span>Tierlists</span>
                 </a>
-                <!-- <a class="float-right" data-open="infoDialog"><i class="fa fa-info-circle"></i></a> -->
             </h5>
         </div>
     </div>
@@ -58,7 +40,7 @@
     src="http://lib.claire-west.ca/core/js/dynCore.js"
     data-ns='{
         "hub": "http://apps.claire-west.ca/hub",
-        "tierlist": "/"
+        "tierlist": "app"
     }'></script>
 <script>
     (function(dynCore) {

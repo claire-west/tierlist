@@ -1,0 +1,23 @@
+<section id="app" class="row contentSection defaultSection" hidden>
+    <div class="column">
+        <table>
+            <tbody z--iterate="currentTierlist.items">
+                <tr z--template>
+                    <td>
+                        <a z--text=">name"></a>
+                    </td>
+                    <td>
+                        <span z--bind='{
+                            "path": ">scores",
+                            "fn": "addScores"
+                        }'></span>
+                        <span>(<span z--bind='{
+                            "path": ">scores",
+                            "fn": "getGrade"
+                        }'></span>)</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
